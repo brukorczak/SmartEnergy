@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela_Principal">
+
+    <!-- inserindo o ProgressBar -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="1600dp"
+                tools:context=".Tela_Principal">
+
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="411dp"
+                    android:layout_height="183dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/bordas_arredondadas_invertida" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="303dp"
+                    android:layout_height="109dp"
+                    android:layout_marginTop="50dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.824"
+                    app:srcCompat="@drawable/icone_barra" />
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="37dp"
+                    android:layout_height="39dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:layout_marginTop="21dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/spinnerResidencia"
+                    app:layout_constraintEnd_toStartOf="@+id/spinnerResidencia"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/spinnerResidencia"
+                    app:layout_constraintVertical_bias="0.777"
+                    app:srcCompat="@drawable/baseline_home_24" />
+
+                <!-- inserindo o ProgressBar -->
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                    app:srcCompat="@drawable/baseline_calendar_today_24" />
+
+
+                <TextView
+                    android:id="@+id/txtData"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:fontFamily="@font/mplusrrounded1c_bold"
+                    android:text="@string/txtData"
+                    android:textColor="@color/preto"
+                    app:layout_constraintBottom_toTopOf="@+id/textView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.132"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton2" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="359dp"
+                    android:layout_height="307dp"
+                    android:layout_marginTop="50dp"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView15"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                    app:layout_constraintVertical_bias="0.178"
+                    app:srcCompat="@drawable/group_8" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Consumo Atual"
+                    android:textColor="@color/branco"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/progress_bar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.188"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="174dp"
+                    android:layout_height="139dp"
+                    android:layout_marginTop="36dp"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/circle"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    tools:progress="60" />
+
+                <TextView
+                    android:id="@+id/textProgressBarPorcentagem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/cinza_claro"
+                    app:layout_constraintBottom_toBottomOf="@+id/progress_bar"
+                    app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+                    app:layout_constraintStart_toStartOf="@+id/progress_bar"
+                    app:layout_constraintTop_toTopOf="@+id/progress_bar"
+                    tools:text="60%" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="127dp"
+                    android:layout_height="109dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="48dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView10"
+                    app:layout_constraintHorizontal_bias="0.12"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="127dp"
+                    android:layout_height="109dp"
+                    android:layout_marginBottom="48dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.88"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+
+                <TextView
+                    android:id="@+id/textInicioConsumoAtual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/agua_marinha"
+                    app:layout_constraintBottom_toTopOf="@+id/textInicioValorConta"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView9"
+                    app:layout_constraintTop_toTopOf="@+id/imageView9"
+                    app:layout_constraintVertical_bias="0.888" />
+
+                <TextView
+                    android:id="@+id/textInicioValorConta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/roxo_rroxeado"
+                    app:layout_constraintBottom_toTopOf="@+id/textView4"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView9"
+                    app:layout_constraintStart_toStartOf="@+id/imageView9" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Conta Atual"
+                    android:textColor="@color/cinza_ardosia"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView9"
+                    app:layout_constraintTop_toTopOf="@+id/imageView9"
+                    app:layout_constraintVertical_bias="0.707" />
+
+                <TextView
+                    android:id="@+id/textInicioConsumoProjetado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/agua_marinha"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView10"
+                    app:layout_constraintHorizontal_bias="0.553"
+                    app:layout_constraintStart_toStartOf="@+id/imageView10"
+                    app:layout_constraintTop_toTopOf="@+id/imageView10"
+                    app:layout_constraintVertical_bias="0.318" />
+
+                <TextView
+                    android:id="@+id/textInicioValorContaProjetado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="44dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/roxo_rroxeado"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView10"
+                    app:layout_constraintHorizontal_bias="0.568"
+                    app:layout_constraintStart_toStartOf="@+id/imageView10" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="28dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Conta projetada"
+                    android:textColor="@color/cinza_ardosia"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView10"
+                    app:layout_constraintStart_toStartOf="@+id/imageView10" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="345dp"
+                    android:layout_height="7dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:srcCompat="@drawable/line_13" />
+
+                <TextView
+                    android:id="@+id/textUltimaFatura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="48dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/agua_marinha"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="62dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView12"
+                    app:srcCompat="@drawable/group_8" />
+
+                <ProgressBar
+                    android:id="@+id/progress_barLimite"
+                    android:layout_width="174dp"
+                    android:layout_height="139dp"
+                    android:layout_marginTop="28dp"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/circle"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                    app:layout_constraintStart_toStartOf="@+id/imageView15"
+                    app:layout_constraintTop_toTopOf="@+id/imageView15"
+                    tools:progress="60" />
+
+                <TextView
+                    android:id="@+id/textProgressBarPorcentagemLimite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/cinza_claro"
+                    app:layout_constraintBottom_toBottomOf="@+id/progress_barLimite"
+                    app:layout_constraintEnd_toEndOf="@+id/progress_barLimite"
+                    app:layout_constraintHorizontal_bias="0.516"
+                    app:layout_constraintStart_toStartOf="@+id/progress_barLimite"
+                    app:layout_constraintTop_toTopOf="@+id/progress_barLimite"
+                    app:layout_constraintVertical_bias="0.509" />
+
+                <Spinner
+                    android:id="@+id/spinnerResidencia"
+                    android:layout_width="265dp"
+                    android:layout_height="21dp"
+                    android:scrollbarSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                    app:layout_constraintHorizontal_bias="0.494"
+                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="@+id/imageView4"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="5dp"
+                    app:layout_constraintVertical_bias="0.522" />
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="345dp"
+                    android:layout_height="7dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/line_13" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="195dp"
+                    android:layout_height="65dp"
+                    android:layout_marginBottom="56dp"
+                    android:backgroundTint="#F1F1F1"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView5"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="@+id/imageView15"
+                    app:srcCompat="@drawable/rectangle_40__2_" />
+
+                <TextView
+                    android:id="@+id/textValorLimite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/agua_marinha"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                    app:layout_constraintHorizontal_bias="0.489"
+                    app:layout_constraintStart_toStartOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/textAjusteLimite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="38dp"
+                    android:fontFamily="@font/mplusrrounded1c_extrabold"
+                    android:text="@string/textAjusteLimite"
+                    android:textColor="@color/agua_marinha"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView5"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                    app:layout_constraintStart_toStartOf="@+id/imageView15"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/textConsumoAtualLimite"
+                    android:layout_width="168dp"
+                    android:layout_height="19dp"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/roxo_rroxeado"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                    app:layout_constraintHorizontal_bias="0.578"
+                    app:layout_constraintStart_toStartOf="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Limite Atual"
+                    android:textColor="@color/branco"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/progress_barLimite"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                    app:layout_constraintHorizontal_bias="0.112"
+                    app:layout_constraintStart_toStartOf="@+id/imageView15"
+                    app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="350dp"
+                    android:layout_height="121dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView15"
+                    app:srcCompat="@drawable/borda_branca_retangular" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="65dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/imageView7"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView15"
+                    app:srcCompat="@drawable/icone_grafico" />
+
+                <TextView
+                    android:id="@+id/textConsumoDoDiaDeHoje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/textConsumoDoDiaDeHoje"
+                    android:textColor="@color/roxo_rroxeado"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                    app:layout_constraintHorizontal_bias="0.764"
+                    app:layout_constraintStart_toStartOf="@+id/imageView7"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+                <TextView
+                    android:id="@+id/textMedidorConsumoDiario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/agua_marinha"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView17"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                    app:layout_constraintHorizontal_bias="0.491"
+                    app:layout_constraintStart_toStartOf="@+id/imageView7" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="345dp"
+                    android:layout_height="7dp"
+                    android:layout_marginTop="60dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.46"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textConsumoDoDiaDeHoje"
+                    app:srcCompat="@drawable/line_13" />
+
+                <TextView
+                    android:id="@+id/txtDicasConsumo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/txtDicasConsumo"
+                    android:textColor="@color/roxo_rroxeado"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                    app:layout_constraintVertical_bias="0.068" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="370dp"
+                    android:layout_height="385dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDicasConsumo"
+                    app:srcCompat="@drawable/consumo" />
+
+                <Button
+                    android:id="@+id/btnConfira"
+                    android:layout_width="212dp"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="181dp"
+                    android:layout_marginEnd="18dp"
+                    android:backgroundTint="@color/borda_edit_text_azul"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/btnConfira"
+                    android:textColor="@color/branco"
+                    app:cornerRadius="47dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+                <TextView
+                    android:id="@+id/textSaudacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="42dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/brancoazulado"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgPerfil"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/textSaudacao"
+                    app:layout_constraintHorizontal_bias="0.666"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/img_usuario"
+                    app:civ_border_color="@color/cinza_borda"
+                    app:civ_border_width="2dp"/>
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.87"
+                    app:layout_constraintStart_toEndOf="@+id/textSaudacao"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/logo_back_clara" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

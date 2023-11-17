@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cbranco_acinzentado"
+    tools:context=".Tela_Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".Tela_Cadastro">
+
+                <TextView
+                    android:id="@+id/textCadTitulo"
+                    android:layout_width="193dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/textCadTitulo"
+                    android:textColor="@color/cazul_marinho"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textCadDescricao"
+                    android:layout_width="292dp"
+                    android:layout_height="85dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserrat_bold"
+
+                    android:text="@string/textoDescricao"
+                    android:textColor="@color/cazul_marinho"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textCadTitulo"
+                    app:layout_constraintTop_toBottomOf="@+id/textCadTitulo" />
+
+
+                <View
+                    android:id="@+id/viewCad"
+                    android:layout_width="411dp"
+                    android:layout_height="659dp"
+                    android:layout_marginTop="185dp"
+                    android:background="@drawable/bordas_arredondadas_azul"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/plainCadNome"
+                    android:layout_width="291dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="32dp"
+                    android:backgroundTint="@color/brancoazulado"
+                    android:ems="10"
+                    android:fontFamily="@font/mplusrrounded1c_bold"
+                    android:hint="@string/hintCadNome"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/cbranco_acinzentado"
+                    android:textColorHighlight="@color/cbranco_acinzentado"
+                    android:textColorHint="@color/cbranco_acinzentado"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/viewCad" />
+
+                <EditText
+                    android:id="@+id/plainCadSobrenome"
+                    android:layout_width="291dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/brancoazulado"
+                    android:ems="10"
+                    android:fontFamily="@font/mplusrrounded1c_bold"
+                    android:hint="@string/hintCadSobrenome"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/cbranco_acinzentado"
+                    android:textColorHighlight="@color/cbranco_acinzentado"
+                    android:textColorHint="@color/cbranco_acinzentado"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.508"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/plainCadNome" />
+
+                <ImageView
+                    android:id="@+id/imgCadNome"
+                    android:layout_width="28dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/plainCadNome"
+                    app:layout_constraintEnd_toEndOf="@+id/plainCadNome"
+                    app:layout_constraintTop_toTopOf="@+id/plainCadNome"
+                    app:layout_constraintVertical_bias="0.21"
+                    app:srcCompat="@drawable/icone_pessoa" />
+
+                <ImageView
+                    android:id="@+id/imgCadNome3"
+                    android:layout_width="28dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/plainCadSobrenome"
+                    app:layout_constraintEnd_toEndOf="@+id/plainCadSobrenome"
+                    app:layout_constraintTop_toTopOf="@+id/plainCadSobrenome"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/icone_pessoa" />
+
+                <EditText
+                    android:id="@+id/plainCadEmail"
+                    android:layout_width="291dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="@color/brancoazulado"
+                    android:ems="10"
+                    android:fontFamily="@font/mplusrrounded1c_bold"
+                    android:hint="@string/hintCadEmail"
+                    android:inputType="textPassword|textEmailAddress"
+                    android:textColor="@color/cbranco_acinzentado"
+                    android:textColorHighlight="@color/cbranco_acinzentado"
+                    android:textColorHint="@color/cbranco_acinzentado"
+                    app:layout_constraintEnd_toEndOf="@+id/plainCadNome"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/plainCadNome"
+                    app:layout_constraintTop_toBottomOf="@+id/plainCadSobrenome" />
+
+                <EditText
+                    android:id="@+id/plainCadTel"
+                    android:layout_width="291dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/brancoazulado"
+                    android:ems="10"
+                    android:fontFamily="@font/mplusrrounded1c_bold"
+                    android:hint="@string/hintCadTel"
+                    android:inputType="number"
+                    android:textColor="@color/cbranco_acinzentado"
+                    android:textColorHighlight="@color/cbranco_acinzentado"
+                    android:textColorHint="@color/cbranco_acinzentado"
+                    app:layout_constraintEnd_toEndOf="@+id/plainCadEmail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/plainCadEmail"
+                    app:layout_constraintTop_toBottomOf="@+id/plainCadEmail" />
+
+                <ImageView
+                    android:id="@+id/imgCadEmail"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/plainCadEmail"
+                    app:layout_constraintEnd_toEndOf="@+id/plainCadEmail"
+                    app:layout_constraintTop_toTopOf="@+id/plainCadEmail"
+                    app:layout_constraintVertical_bias="0.21"
+                    app:srcCompat="@drawable/icone_email_branco" />
+
+                <EditText
+                    android:id="@+id/plainCadSenha"
+                    android:layout_width="291dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/brancoazulado"
+                    android:ems="10"
+                    android:fontFamily="@font/mplusrrounded1c_bold"
+                    android:hint="@string/hintLogSenha"
+                    android:inputType="textPassword"
+                    android:textColor="@color/cbranco_acinzentado"
+                    android:textColorHighlight="@color/cbranco_acinzentado"
+                    android:textColorHint="@color/cbranco_acinzentado"
+                    app:layout_constraintEnd_toEndOf="@+id/plainCadCpf"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/plainCadCpf"
+                    app:layout_constraintTop_toBottomOf="@+id/plainCadCpf" />
+
+
+
+                <EditText
+                    android:id="@+id/plainCadConfirmarSenha"
+                    android:layout_width="291dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/brancoazulado"
+                    android:ems="10"
+                    android:fontFamily="@font/mplusrrounded1c_bold"
+                    android:hint="@string/hintCadConfirmarSenha"
+                    android:inputType="textPassword"
+                    android:textColor="@color/cbranco_acinzentado"
+                    android:textColorHighlight="@color/cbranco_acinzentado"
+                    android:textColorHint="@color/cbranco_acinzentado"
+                    app:layout_constraintEnd_toEndOf="@+id/plainCadSenha"
+                    app:layout_constraintStart_toStartOf="@+id/plainCadSenha"
+                    app:layout_constraintTop_toBottomOf="@+id/plainCadSenha" />
+
+
+
+                <EditText
+                    android:id="@+id/plainCadCpf"
+                    android:layout_width="291dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/brancoazulado"
+                    android:ems="10"
+                    android:fontFamily="@font/mplusrrounded1c_bold"
+                    android:hint="@string/hintCadCpf"
+                    android:inputType="number"
+                    android:textColor="@color/cbranco_acinzentado"
+                    android:textColorHighlight="@color/cbranco_acinzentado"
+                    android:textColorHint="@color/cbranco_acinzentado"
+                    app:layout_constraintEnd_toEndOf="@+id/plainCadTel"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/plainCadTel"
+                    app:layout_constraintTop_toBottomOf="@+id/plainCadTel" />
+
+                <ImageView
+                    android:id="@+id/imgCadCpf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/plainCadCpf"
+                    app:layout_constraintEnd_toEndOf="@+id/plainCadCpf"
+                    app:layout_constraintTop_toTopOf="@+id/plainCadCpf"
+                    app:layout_constraintVertical_bias="0.21"
+                    app:srcCompat="@drawable/icone_cpf_branco" />
+
+                <Button
+                    android:id="@+id/btnCad"
+                    android:layout_width="290dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="92dp"
+                    android:background="@drawable/rounded_button1"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/btnCadastro"
+                    android:textColor="@color/cazul_marinho"
+                    android:textSize="19sp"
+                    app:layout_constraintEnd_toEndOf="@+id/plainCadConfirmarSenha"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/plainCadConfirmarSenha"
+                    app:layout_constraintTop_toBottomOf="@+id/plainCadConfirmarSenha" />
+
+                <ImageButton
+                    android:id="@+id/btnVoltaCad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.04"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icone_seta" />
+
+                <ImageView
+                    android:id="@+id/imageView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/plainCadTel"
+                    app:layout_constraintEnd_toEndOf="@+id/plainCadTel"
+                    app:layout_constraintTop_toTopOf="@+id/plainCadTel"
+                    app:srcCompat="@drawable/phone_cad" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxTermos"
+                    android:layout_width="258dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="48dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Aceito os termo de uso"
+                    android:textColor="@color/brancoazulado"
+                    app:layout_constraintBottom_toTopOf="@+id/btnCad"
+                    app:layout_constraintEnd_toEndOf="@+id/txtTermosUso"
+                    app:layout_constraintHorizontal_bias="0.361"
+                    app:layout_constraintStart_toStartOf="@+id/txtTermosUso"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTermosUso"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/txtTermosUso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/lerTermos"
+                    android:textColor="@color/brancoazulado"
+                    app:layout_constraintEnd_toEndOf="@+id/plainCadConfirmarSenha"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/plainCadConfirmarSenha"
+                    app:layout_constraintTop_toBottomOf="@+id/plainCadConfirmarSenha" />
+
+                <ImageButton
+                    android:id="@+id/btnCadSenha"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/borda_edit_text_azul"
+                    app:layout_constraintEnd_toEndOf="@+id/plainCadSenha"
+                    app:layout_constraintHorizontal_bias="0.965"
+                    app:layout_constraintStart_toStartOf="@+id/plainCadSenha"
+                    app:layout_constraintTop_toTopOf="@+id/plainCadSenha"
+                    app:srcCompat="@drawable/olho_fechado_branco" />
+
+                <ImageButton
+                    android:id="@+id/btnCadConfirmaSenha"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/borda_edit_text_azul"
+                    app:layout_constraintEnd_toEndOf="@+id/plainCadConfirmarSenha"
+                    app:layout_constraintHorizontal_bias="0.965"
+                    app:layout_constraintStart_toStartOf="@+id/plainCadConfirmarSenha"
+                    app:layout_constraintTop_toTopOf="@+id/plainCadConfirmarSenha"
+                    app:srcCompat="@drawable/olho_fechado_branco" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

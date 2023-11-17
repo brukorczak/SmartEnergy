@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brancoazulado"
+    tools:context=".Tela_Redefinir_Senha">
+
+    <TextView
+        android:id="@+id/txtNvSenhaTitulo"
+        android:layout_width="313dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/txtNvSenhaTitulo"
+        android:textColor="@color/lazul_marinho"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNvSenhaDsc"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="44dp"
+
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/txtNvSenhaDsc"
+        android:textColor="@color/lazul_marinho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNvSenhaTitulo" />
+
+    <EditText
+        android:id="@+id/editTextNvSenha"
+        android:layout_width="314dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/borda_redonda_edit_text"
+        android:drawableRight="@drawable/olho_fechado"
+        android:ems="10"
+        android:hint="@string/editTextNvSenha"
+        android:inputType="textPassword"
+        android:longClickable="false"
+        android:textColor="@color/lazul_marinho"
+        android:textColorHint="@color/lazul_marinho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNvSenhaDsc" />
+
+    <EditText
+        android:id="@+id/editTextCfmSenha"
+        android:layout_width="314dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/borda_redonda_edit_text"
+        android:drawableRight="@drawable/olho_fechado"
+        android:ems="10"
+        android:hint="@string/editTextCfmSenha"
+        android:inputType="textPassword"
+        android:longClickable="false"
+        android:textColor="@color/lazul_marinho"
+        android:textColorHint="@color/lazul_marinho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNvSenha" />
+
+    <Button
+        android:id="@+id/btnCfmSenha"
+        android:layout_width="312dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/lazul_marinho"
+        android:text="@string/btnCfmSenha"
+        android:textColor="@color/lbranco"
+        app:cornerRadius="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCfmSenha" />
+
+    <ImageButton
+        android:id="@+id/btnVoltaNovaSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icone_seta"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

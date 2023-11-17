@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Aqui está o fundo o gráfico -->
+    <item>
+        <rotate
+            android:fromDegrees="270"
+            android:toDegrees="270">
+            <shape
+                android:shape="ring"
+                android:thickness="20dp"
+                android:useLevel="false">
+                    <!--TODO   alterar cor a baixo-->
+                <gradient
+                    android:endColor="@color/green"
+                    android:type="linear" />
+            </shape>
+        </rotate>
+
+    </item>
+    <!-- Abaixo está o preenchimento do gráfico -->
+    <item>
+        <rotate
+            android:fromDegrees="180"
+            android:toDegrees="180">
+            <shape
+                android:shape="ring"
+                android:thickness="20dp"
+                android:useLevel="true">
+                <gradient
+                    android:endColor="@color/green"
+                    android:centerColor="@color/yellow"
+                    android:startColor="@color/red"
+                    android:type="linear" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
